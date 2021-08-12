@@ -8008,8 +8008,8 @@ if text == ("تحديث السورس") and Devxfayr(msg) then
 send(msg.chat_id_,msg.id_,'⤦: تم التحديث')
 os.execute('rm -rf xfayr.lua')
 os.execute('rm -rf start.lua')
-os.execute('wget https://raw.githubusercontent.com/korapica-Team/xfayr/master/xfayr.lua')
-os.execute('wget https://raw.githubusercontent.com/korapica-Team/xfayr/master/start.lua')
+os.execute('wget https://raw.githubusercontent.com/xfayr/xfayr/master/xfayr.lua')
+os.execute('wget https://raw.githubusercontent.com/xfayr/xfayr/master/start.lua')
 dofile('xfayr.lua')  
 return false
 end
@@ -8457,30 +8457,16 @@ if data.Ch_Member.info ~= true then
 send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @xfayr ] ❳')
 return false
 end
-local Text =[[
-
-- 𝗐ᴇʟᴄᴏ𝗆𝖾 ᴛᴏ 𝗌𝗈𝗎𝗋𝖼𝖾 𝗌𝗁𝖺𝗁𝗎𝗆 .
-
+Text = [[
+👤 Source & Fayr 
+━━━━━━━━━
+¬ Team : [channel . ](t.me/xfayr)
+channel< [Updates](t.me/fayrx)
+💽 Tws ~› [source](t.me/i59bot) .  
+━━━━━━━━━ 
+🎞 The Top | @rr8_8 !
 ]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-
-{
-{text = '❲ Source fayr ❳', url = "https://t.me/xfayr"}
-},
-{
-{text = '❲ Source info ❳', url = "https://t.me/fayrx"}
-},
-{
-{text = '❲ Coder ❳', url = "https://t.me/rr8_8"}
-},
-{
-{text = '❲ TwS ❳', url = "https://t.me/I59bot"}
-},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-return false 
+send(msg.chat_id_, msg.id_,Text)
 end
 if text == 'حاله الاشتراك' or text == 'حاله اشتراك البوت' then  
 Text = [[⤦: حاله اشتراك البوت ( عادي ) .]]
@@ -9585,8 +9571,8 @@ if text == "تحديث السورس ⌔" then
 send(msg.chat_id_,msg.id_,'⤦: تم التحديث')
 os.execute('rm -rf xfayr.lua')
 os.execute('rm -rf start.lua')
-os.execute('wget https://raw.githubusercontent.com/korapica-Team/xfayr/master/xfayr.lua')
-os.execute('wget https://raw.githubusercontent.com/korapica-Team/xfayr/master/start.lua')
+os.execute('wget https://raw.githubusercontent.com/xfayr/xfayr/master/xfayr.lua')
+os.execute('wget https://raw.githubusercontent.com/xfayr/xfayr/master/start.lua')
 dofile('xfayr.lua')  
 return false
 end
@@ -10003,7 +9989,7 @@ print("\27[34m"..[[
 >> The Bot is Running
 >> Bot source > fayr
 >>Source channel > @xfayr
->>Source CoDeR > @imSHaHuM
+>>Source CoDeR > @rr8_8
   ______            _______         __  __ 
  |  ____|          |__   __|       |  \/  |
  | |__ __ _ _   _ _ __| | ___  __ _| \  / |
