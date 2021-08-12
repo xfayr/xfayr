@@ -8457,16 +8457,30 @@ if data.Ch_Member.info ~= true then
 send(msg.chat_id_,msg.id_,'- اشترك في قناة السورس أولا\n[❲ @xfayr ] ❳')
 return false
 end
-Text = [[
-👤 Source & Fayr 
-━━━━━━━━━
-¬ Team : [channel . ](http://t.me/xfayr)
-channel< [Updates](http://t.me/fayrx)
-💽 Tws ~› [source](http://t.me/i59bot) .  
-━━━━━━━━━ 
-🎞 The Top | @rr8_8 !
+local Text =[[
+
+- 𝗐ᴇʟᴄᴏ𝗆𝖾 ᴛᴏ 𝗌𝗈𝗎𝗋𝖼𝖾 fyar .
+
 ]]
-send(msg.chat_id_, msg.id_,Text)
+keyboard = {} 
+keyboard.inline_keyboard = {
+
+{
+{text = '❲ fayr team ❳', url = "t.me/xfayr"}
+},
+{
+{text = '❲ Source info ❳', url = "t.me/fayrx"}
+},
+{
+{text = '❲ Coder ❳', url = "https://t.me/rr8_8"}
+},
+{
+{text = '❲ TwS ❳', url = "t.me/i59bot"}
+},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+return false 
 end
 if text == 'حاله الاشتراك' or text == 'حاله اشتراك البوت' then  
 Text = [[⤦: حاله اشتراك البوت ( عادي ) .]]
