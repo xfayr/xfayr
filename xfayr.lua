@@ -8460,9 +8460,9 @@ end
 Text = [[
 👤 Source & Fayr 
 ━━━━━━━━━
-¬ Team : [channel . ](t.me/xfayr)
-channel< [Updates](t.me/fayrx)
-💽 Tws ~› [source](t.me/i59bot) .  
+¬ Team : [channel . ](http://t.me/xfayr)
+channel< [Updates](http://t.me/fayrx)
+💽 Tws ~› [source](http://t.me/i59bot) .  
 ━━━━━━━━━ 
 🎞 The Top | @rr8_8 !
 ]]
