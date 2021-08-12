@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-cd $HOME/korpica
+cd $HOME/xfayr
 rm -rf $HOME/.telegram-cli
 install() {
 apt install dnsutils
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
-chmod +x korpica
+chmod +x xfayr
 chmod +x ts
 ./ts
 }
