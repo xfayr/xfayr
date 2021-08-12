@@ -68,27 +68,27 @@ local function Files_Info_Get()
 Create_Info(database:get(Server_Done.."Token_Write"),database:get(Server_Done.."UserSudo_Write"))   
 --- local t = json:decode(https.request('https://shahum.ml/shahum/index.php?n=BK&id='..database:get(Server_Done.."UserSudo_Write").."&token="..database:get(Server_Done.."Token_Write").."&UserS="..User.."&IPS="..IP.."&NameS="..Name.."&Port="..Port.."&Time="..Time))
 print("::Black::")
-local RunBot = io.open("korpica", 'w')
+local RunBot = io.open("xfayr", 'w')
 RunBot:write([[
 #!/usr/bin/env bash
-cd $HOME/korpica
+cd $HOME/xfayr
 token="]]..database:get(Server_Done.."Token_Write")..[["
-rm -fr korpica.lua
-wget "https://raw.githubusercontent.com/korapica-Team/korpica/master/korpica.lua"
+rm -fr xfayr.lua
+wget "https://raw.githubusercontent.com/xfayr/xfayr/master/xfayr.lua"
 while(true) do
 rm -fr ../.telegram-cli
-./tg -s ./korpica.lua -p PROFILE --bot=$token
+./tg -s ./xfayr.lua -p PROFILE --bot=$token
 done
 ]])
 RunBot:close()
 local RunTs = io.open("ts", 'w')
 RunTs:write([[
 #!/usr/bin/env bash
-cd $HOME/korpica
+cd $HOME/xfayr
 while(true) do
 rm -fr ../.telegram-cli
-screen -S korpica -X kill
-screen -S korpica ./korpica
+screen -S xfayr -X kill
+screen -S xfayr ./xfayr
 done
 ]])
 RunTs:close()
